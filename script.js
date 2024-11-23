@@ -1,4 +1,6 @@
 // script.js
+coin_amount = 0
+
 document.getElementById("task-button").addEventListener('click', function() {
     // Get the task input value
     const taskInput = document.getElementById('task-input');
@@ -13,12 +15,12 @@ document.getElementById("task-button").addEventListener('click', function() {
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
 
-        // Create a span for the task text
+        // Create room for the task text
         const taskSpan = document.createElement('span');
         taskSpan.classList.add('task-text');
         taskSpan.textContent = taskText;
 
-        // Append the checkbox and task text to the list item
+        // Add the checkbox and task text to the list item
         taskItem.appendChild(checkbox);
         taskItem.appendChild(taskSpan);
 
@@ -32,10 +34,12 @@ document.getElementById("task-button").addEventListener('click', function() {
         checkbox.addEventListener('change', function() {
             if (checkbox.checked) {
                 taskItem.remove();
+                coin_amount += 100
+                console.log(coin_amount)
             }
         });
     } else {
-        alert('Please enter a task!');
+        alert('Please enter a task to work on!');
     }
 });
 
@@ -45,7 +49,7 @@ document.getElementById("task-button").addEventListener('click', function() {
 
 
 
-// Shop the systems
+// Shop systems
 shades = document.getElementById("acc-shades")
 beanie = document.getElementById("acc-beanie")
 tshirt = document.getElementById("acc-tshirt")
@@ -54,7 +58,7 @@ dragon_image = document.getElementById("dragon-image")
 
 shades.addEventListener("click", function() {
     console.log("shades clicked")
-    dragon_image.src = "Contents/Sprites/Characters/firedragon_shades.gif"
+        dragon_image.src = "Contents/Sprites/Characters/firedragon_shades.gif"
 });
 
 beanie.addEventListener("click", function() {

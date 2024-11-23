@@ -15,15 +15,10 @@ body {
     border-left: solid;
     border-left-width: thick;
     border-left-color: #000000;
-    background-image: url("Contents/Sprites/Backgrounds/shop.png");
+    background-color: #f3ba6a;
+    background-image: url(Contents/Sprites/Backgrounds/shop.png);
     background-repeat: no-repeat;
     background-size: contain;
-}
-
-#shop-title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
 }
 
 
@@ -71,15 +66,15 @@ body {
     top: 77%;
     left: 0;
     position: fixed;
-    overflow: scroll;
     font-size: 18px;
     text-align: left;
     width: 80.5%;
-    height: 40%;
+    height: 20%;
     background-color: rgb(173, 171, 173);
     padding: 10px;
     border-top: solid;
     border-top-color: #000000;
+    overflow-y: scroll;
 }
 
 #task-button {
@@ -105,4 +100,10 @@ body {
 
 .task-text {
     flex-grow: 1;
+}
+
+
+#credits {
+    font-size: 12px;
+    text-align: center;
 }
