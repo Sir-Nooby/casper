@@ -10,7 +10,7 @@ body {
     position: fixed;
     right: 0;
     top: 0;
-    text-align: "center";
+    text-align: center;
     padding: 18px;
     border-left: solid;
     border-left-width: thick;
@@ -19,12 +19,18 @@ body {
     background-image: url(Contents/Sprites/Backgrounds/shop.png);
     background-repeat: no-repeat;
     background-size: contain;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-evenly; 
 }
 
-
-
-
-
+ .cosmetics {
+    width: 100%;
+    height: 75%;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-evenly; 
+ }
 
 #topbar {
     top: 0;
@@ -40,6 +46,7 @@ body {
     height: 55px;
     border-bottom: solid;
     border-bottom-color: black;
+    background-image: url("Contents/Sprites/Menu/banner.png");
 }
 
 #site-image {
@@ -48,7 +55,13 @@ body {
 }
 
 #coin-amount {
-    right:0
+    font-size:26px;
+    font-weight: bold;
+    text-align: right;
+}
+
+#coin {
+    width:3%
 }
 
 #friend-home {
@@ -58,6 +71,7 @@ body {
     text-align: center;
     width: 82%;
     height: 65%;
+    background-color:#2e2424;
     background-image: url("Contents/Sprites/Backgrounds/dojo.png");
     background-repeat: no-repeat;
     background-size: contain;

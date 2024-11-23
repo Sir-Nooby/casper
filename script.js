@@ -1,6 +1,13 @@
-// script.js
-coin_amount = 0
+// Casper - The Productivity Dragon Javascript
+let coin_amount = parseInt(localStorage.getItem('coin_amount')) || 0;
+coin_value = document.getElementById("coin-amount")
 
+function updateCoinValue() {
+    localStorage.setItem('coin_amount', coin_amount);
+    coin_value.textContent = coin_amount;
+}
+
+coin_value.textContent = coin_amount
 document.getElementById("task-button").addEventListener('click', function() {
     // Get the task input value
     const taskInput = document.getElementById('task-input');
@@ -35,6 +42,8 @@ document.getElementById("task-button").addEventListener('click', function() {
             if (checkbox.checked) {
                 taskItem.remove();
                 coin_amount += 100
+                coin_value.textContent = coin_amount
+                updateCoinValue();
                 console.log(coin_amount)
             }
         });
@@ -58,15 +67,27 @@ dragon_image = document.getElementById("dragon-image")
 
 shades.addEventListener("click", function() {
     console.log("shades clicked")
+    if (coin_amount >= 500) {
         dragon_image.src = "Contents/Sprites/Characters/firedragon_shades.gif"
+    } else {
+        alert("Insufficient Dragos!")
+    }
 });
 
 beanie.addEventListener("click", function() {
     console.log("beanie clicked")
-    dragon_image.src = "Contents/Sprites/Characters/firedragon_beanie.gif"
+    if (coin_amount >= 100) {
+        dragon_image.src = "Contents/Sprites/Characters/firedragon_beanie.gif"
+    } else {
+        alert("Insufficient Dragos!")
+    }
 });
 
 tshirt.addEventListener("click", function() {
     console.log("tshirt clicked")
-    dragon_image.src = "Contents/Sprites/Characters/firedragon_tshirt.gif"
+    if (coin_amount >= 250) {
+        dragon_image.src = "Contents/Sprites/Characters/firedragon_tshirt.gif"
+    } else {
+        alert("Insufficient Dragos!")
+    }
 });
