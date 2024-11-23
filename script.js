@@ -1,9 +1,8 @@
 // script.js
-document.getElementById('task-button').addEventListener('click', function() {
+document.getElementById("task-button").addEventListener('click', function() {
     // Get the task input value
     const taskInput = document.getElementById('task-input');
     const taskText = taskInput.value.trim();
-    console.log("There should be a task here")
 
     // If the task is not empty
     if (taskText) {
