@@ -4,57 +4,83 @@ body {
     background-color: #FFFFFF;
 }
 
-
 .sidebar {
     width: 15%;
     height: 100%;
     position: fixed;
     right: 0;
     top: 0;
-    background-color: #f0f0f0;
-    padding: 20px;
+    text-align: "center";
+    padding: 18px;
+    border-left: solid;
+    border-left-width: thick;
+    border-left-color: #000000;
+    background-image: url("Contents/Sprites/Backgrounds/shop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
+
+#shop-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+
 
 
 #topbar {
     top: 0;
     left: 0;
-    position:fixed;
+    position: fixed;
     font-size: 14px;
     text-align: center;
-    background-color: rgb(151, 177, 151);
-    width: 85%;
+    background-color: rgb(243, 141, 141);
+    width: 81%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 55px;
+    border-bottom: solid;
+    border-bottom-color: black;
+}
+
+#site-image {
+    width: 25%;
+    height: auto;
 }
 
 
 
 #friend-home {
-    top: 8%;
+    top: 12%;
     left: 0;
-    position:fixed;
-    font-size: 14px;
+    position: fixed;
     text-align: center;
     width: 82%;
     height: 65%;
-    background-image: url("Contents/pet.png");
+    background-image: url("Contents/Sprites/Backgrounds/dojo.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-
 #taskbar {
-    top: 75%;
+    top: 77%;
     left: 0;
     position: fixed;
+    overflow: scroll;
     font-size: 18px;
     text-align: left;
-    width: 82%;
-    height: 25%;
+    width: 80.5%;
+    height: 40%;
     background-color: rgb(173, 171, 173);
     padding: 10px;
+    border-top: solid;
+    border-top-color: #000000;
 }
-
-
 
 #task-button {
     padding: 8px 16px;
