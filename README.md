@@ -6,6 +6,4 @@ Use Dragos to purchase cool outfits for your virtual buddy!
 
 Made by SirNooby and Zakichan @ Hammerhacks `24 in 7 hours!
 
-And we won! Congratulations! Love my new JBL speaker!!!!!
-
-Skibidi bop bop yes yes yes
+And we won! Congratulations! We both learned a lot from this competition and look forward to working together again.
